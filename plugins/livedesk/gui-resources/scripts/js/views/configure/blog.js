@@ -193,7 +193,7 @@
                 // TODO: move this in emebed view or in theme view
                 self.el.find('#emebed-script').focus(function() { $(this).select(); } );
 
-                angular.bootstrap(document, ['seoConf']);
+                angular.bootstrap(angular.element('#seo'), ['seoConf']);
                 var angScope = angular.element($('[name="seoAngular"]')).scope();
 
                 /* sf-toggle*/
